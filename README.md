@@ -1,4 +1,4 @@
-\# Aster \& Row Customer Support AI Agent
+# Aster & Row Customer Support AI Agent
 
 
 
@@ -10,35 +10,35 @@ The agent answers customer support questions using a controlled company knowledg
 
 
 
-\## Features
+## Features
 
 
 
-\- Answers customer questions using the company knowledge base
+- Answers customer questions using the company knowledge base
 
-\- Semantic retrieval using Sentence Transformers
+- Semantic retrieval using Sentence Transformers
 
-\- Uses only active and official policies for authoritative answers
+- Uses only active and official policies for authoritative answers
 
-\- Handles conflicting policy documents safely
+- Handles conflicting policy documents safely
 
-\- Protects against prompt injection
+- Protects against prompt injection
 
-\- Provides safe order lookups
+- Provides safe order lookups
 
-\- Protects private customer information
+- Protects private customer information
 
-\- Supports multi-turn conversations
+- Supports multi-turn conversations
 
-\- Provides source citations
+- Provides source citations
 
-\- Recommends human support when required
+- Recommends human support when required
 
-\- Handles missing or insufficient information without guessing
+- Handles missing or insufficient information without guessing
 
 
 
-\## How It Works
+## How It Works
 
 
 
@@ -84,27 +84,27 @@ Customer-Safe Response
 
 
 
-\## Technologies
+## Technologies
 
 
 
-\- Python
+- Python
 
-\- Groq API
+- Groq API
 
-\- Sentence Transformers
+- Sentence Transformers
 
-\- NumPy
+- NumPy
 
-\- PyYAML
+- PyYAML
 
-\- pytest
+- pytest
 
-\- Retrieval-Augmented Generation (RAG)
+- Retrieval-Augmented Generation (RAG)
 
 
 
-\## Knowledge Base
+## Knowledge Base
 
 
 
@@ -116,23 +116,23 @@ It covers:
 
 
 
-\- Returns
+- Returns
 
-\- Shipping
+- Shipping
 
-\- Warranty
+- Warranty
 
-\- Damaged or wrong items
+- Damaged or wrong items
 
-\- TrailPlus membership
+- TrailPlus membership
 
-\- Product care
+- Product care
 
-\- International shipping
+- International shipping
 
-\- Order changes and cancellations
+- Order changes and cancellations
 
-\- Gift cards and price adjustments
+- Gift cards and price adjustments
 
 
 
@@ -140,13 +140,13 @@ Each policy document contains metadata such as:
 
 
 
-\- Status
+- Status
 
-\- Effective date
+- Effective date
 
-\- Last reviewed date
+- Last reviewed date
 
-\- Policy authority
+- Policy authority
 
 
 
@@ -154,7 +154,7 @@ Only documents marked as active and official are treated as authoritative.
 
 
 
-\## Order Lookup
+## Order Lookup
 
 
 
@@ -166,13 +166,13 @@ It can provide:
 
 
 
-\- Order status
+- Order status
 
-\- Carrier
+- Carrier
 
-\- Tracking information
+- Tracking information
 
-\- Estimated delivery date
+- Estimated delivery date
 
 
 
@@ -180,19 +180,19 @@ Sensitive internal information is not disclosed, including:
 
 
 
-\- Customer email
+- Customer email
 
-\- Shipping address
+- Shipping address
 
-\- Internal notes
+- Internal notes
 
-\- Risk scores
+- Risk scores
 
-\- Fraud-related information
+- Fraud-related information
 
 
 
-\## Evaluation
+## Evaluation
 
 
 
@@ -220,57 +220,57 @@ The evaluation covers:
 
 
 
-\- Standard return policy
+- Standard return policy
 
-\- TrailPlus return policy
+- TrailPlus return policy
 
-\- Damaged final-sale items
+- Damaged final-sale items
 
-\- International shipping
+- International shipping
 
-\- Unsupported countries
+- Unsupported countries
 
-\- Order lookup
+- Order lookup
 
-\- Missing order IDs
+- Missing order IDs
 
-\- Cancelled orders
+- Cancelled orders
 
-\- Unknown orders
+- Unknown orders
 
-\- Privacy protection
+- Privacy protection
 
-\- Warranty questions
+- Warranty questions
 
-\- Prompt injection
+- Prompt injection
 
-\- Insufficient information
+- Insufficient information
 
-\- Conflicting official sources
+- Conflicting official sources
 
-\- Human handoff behavior
-
-
-
-\## Known Limitations
+- Human handoff behavior
 
 
 
-\- The agent depends on the supplied knowledge base for company-specific information.
-
-\- It cannot directly perform refunds, cancellations, replacements, or other customer-service actions.
-
-\- Some conflicting or incomplete policy situations require human support.
-
-\- Order information comes from the supplied test dataset.
-
-\- The application currently uses a terminal-based CLI rather than a web interface.
-
-\- The quality of responses depends partly on the quality of retrieved knowledge-base passages.
+## Known Limitations
 
 
 
-\## Setup
+- The agent depends on the supplied knowledge base for company-specific information.
+
+- It cannot directly perform refunds, cancellations, replacements, or other customer-service actions.
+
+- Some conflicting or incomplete policy situations require human support.
+
+- Order information comes from the supplied test dataset.
+
+- The application currently uses a terminal-based CLI rather than a web interface.
+
+- The quality of responses depends partly on the quality of retrieved knowledge-base passages.
+
+
+
+## Setup
 
 
 
@@ -306,7 +306,7 @@ Do not commit the .env file or API keys.
 
 
 
-\## Run
+## Run
 
 
 
@@ -326,7 +326,7 @@ python cli.py --debug
 
 
 
-\## Testing
+## Testing
 
 
 
@@ -346,37 +346,27 @@ Expected result:
 
 
 
-\## Project Structure
+## Project Structure
 
 
 
+```text
 aster-row-agent/
-
-|
-
-+-- app/
-
-+-- data/
-
-+-- evaluation/
-
-+-- knowledge-base/
-
-+-- tests/
-
-+-- cli.py
-
-+-- requirements.txt
-
-+-- README.md
-
-+-- .env.example
-
-+-- .gitignore
+├── app/
+├── data/
+├── evaluation/
+├── knowledge-base/
+├── tests/
+├── cli.py
+├── requirements.txt
+├── README.md
+├── .env.example
+└── .gitignore
+```
 
 
 
-\## Demo
+## Demo
 
 A short demonstration of the Aster & Row customer support agent:
 
@@ -384,7 +374,7 @@ A short demonstration of the Aster & Row customer support agent:
 
 
 
-\## Security
+## Security
 
 
 
@@ -392,16 +382,15 @@ The repository must not contain:
 
 
 
-\- API keys
+- API keys
 
-\- Passwords
+- Passwords
 
-\- Credentials
+- Credentials
 
-\- Private customer information
+- Private customer information
 
-\- Production customer datasets
-
+- Production customer datasets
 
 
 The .gitignore file excludes local environment files and generated runtime files.
