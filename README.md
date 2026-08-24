@@ -348,8 +348,6 @@ Expected result:
 
 ## Project Structure
 
-
-
 ```text
 aster-row-agent/
 ├── app/
