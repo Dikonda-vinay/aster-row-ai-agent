@@ -378,9 +378,9 @@ aster-row-agent/
 
 \## Demo
 
+A short demonstration of the Aster & Row customer support agent:
 
-
-A short GIF or video demonstrating the agent working will be embedded here before submission.
+[▶️ Watch the demo video](./demo.mp4)
 
 
 
